@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Favorites</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f4ef;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #6b4f3a;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd9b3;
+        }
+
+        .navigation {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 40px;
+          width: 100%;
+        }
+
+        .navigation a {
+          background-color: #6b4f3a;
+          color: white;
+          text-decoration: none;
+          padding: 12px 25px;
+          border-radius: 8px;
+          font-weight: bold;
+        }
+
+        .navigation a:hover {
+           background-color: #8a684e;
+        }
+
+        /* Main container */
+        .container {
+            width: 85%;
+            margin: 40px auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #6b4f3a;
+            font-size: 40px;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        /* Favorite section */
+        .favorite {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #ddd;
+
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .favorite img {
+            width: 300px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .recipe-video {
+          width: 500px;
+         max-width: 100%;
+         border-radius: 15px;
+         display: block;
+          margin: 20px auto;
+        }
+
+        audio {
+          width: 100%;
+          margin-top: 15px;
+        }
+
+        .favorite-text {
+            flex: 1;
+        }
+
+        .favorite h2 {
+            color: #6b4f3a;
+            margin-top: 0;
+        }
+
+        .favorite p {
+            line-height: 1.7;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            .favorite {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .favorite img {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="recipe.html">Recipe</a>
+        <a href="picture.html">Picture</a>
+        <a href="table.html">Table</a>
+
+    </nav>
+
+
+    <div class="container">
+
+        <h1>My Favorites</h1>
+
+        <p class="intro">
+            Here are some of my favorite things and why I like them.
+        </p>
+
+
+        <!-- Favorite Drink -->
+        <section class="favorite">
+
+            <img
+                src="pict/kopi.jpg"
+                alt="Coffee">
+
+            <div class="favorite-text">
+
+                <h2>☕ My Favorite Drink</h2>
+
+                <p>
+                    Coffee is one of my favorite drinks.
+                    I usually drink coffee when I am studying or
+                    working on assignments. It helps me feel more
+                    focused and makes studying more enjoyable.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Favorite Music -->
+        <section class="favorite">
+
+            <img
+                src="pict/konser.jpg"
+                alt="Music">
+
+            <div class="favorite-text">
+
+                <h2>🎵 My Favorite Music</h2>
+
+                <p>
+                    Music is a big part of my daily life.
+                    I enjoy pop, jazz, and pop-rock music.
+                    I also love singing, so music is something
+                    that I enjoy both listening to and performing.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Favorite Food -->
+        <section class="favorite">
+
+            <img
+                src="pict/seblak.jpg"
+                alt="Food">
+
+            <div class="favorite-text">
+
+                <h2>🍜 My Favorite Food</h2>
+
+                <p>
+                    One of my favorite foods is seblak.
+                    I like it because it is spicy, flavorful,
+                    and has many different toppings.
+                    It is also perfect when I want something
+                    warm and comforting.
+                </p>
+
+
+
+            </div>
+
+        </section>
+
+        <video class="recipe-video" controls>
+            <source src="pict/seblak.vid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h2>Audio Explanation</h2>
+
+        <audio controls>
+            <source src="pict/coffee.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+       </audio>
+
+
+    <div class="navigation">
+
+        <a href="recipe.html">
+            ← Back
+        </a>
+    
+        <a href="table.html">
+            Next →
+        </a>
+    
+    </div>
+
+</body>
+
+</html>
